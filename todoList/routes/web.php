@@ -15,6 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todoList', function () {
-    return view('todoList');
-});
+Route::get('/todoList', 'ListController@getTodoList');
+
